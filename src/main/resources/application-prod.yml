@@ -1,0 +1,63 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /billservice
+
+spring:
+  #数据库设置
+  datasource:
+    url: jdbc:mysql://localhost:3310/accountopen?useUnicode=true&characterEncoding=UTF-8&verifyServerCertificate=false&useSSL=false&requireSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: Dabby@2017
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat,slf4j
+    initialSize: 10
+    maxActive: 100
+    maxWait: 60000
+    minIdle: 5
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+  #缓存设置
+  redis:
+    database: 7
+    host: xxx.xxx.xxx.xxx
+    port: 6379
+    jedis:
+      pool:
+        max-active: 500
+        max-idle: 200
+        max-wait: 1000ms
+
+#rocketmq设置
+rocketmq:
+  #该应用是否启用生产者
+  producer:
+    isOnoff: on
+    #发送同一类消息的设置为同一个group，保证唯一,默认不需要设置，rocketmq会使用ip@pid(pid代表jvm名字)作为唯一标示
+    groupName: ${spring.application.name}
+    #mq的nameserver地址
+    namesrvAddr: xxx.xxx.xxx.xxx:9876
+    #消息最大长度 默认1024*4(4M)
+    maxMessageSize: 40960000
+    #发送消息超时时间,默认3000
+    sendMsgTimeout: 8000
+    #发送消息失败重试次数，默认2
+    retryTimesWhenSendFailed: 2
+  ##该应用是否启用消费者
+  consumer:
+    isOnoff: on
+    groupName: ${spring.application.name}
+    #mq的nameserver地址
+    namesrvAddr: xxx.xxx.xxx.xxx:9876
+    #该消费者订阅的主题和tags("*"号表示订阅该主题下所有的tags),格式：topic~tag1||tag2||tag3;topic2~*;
+    topics: DemoTopic~*;
+    consumeThreadMin: 20
+    consumeThreadMax: 64
+    #设置一次消费消息的条数，默认为1条
+    consumeMessageBatchMaxSize: 1
