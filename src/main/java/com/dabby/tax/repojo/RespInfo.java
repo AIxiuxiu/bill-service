@@ -1,7 +1,7 @@
-package com.dabby.tax.billservice.repojo;
+package com.dabby.tax.repojo;
 
-import com.dabby.tax.billservice.enums.RetCode;
-import com.dabby.tax.billservice.util.CommonTool;
+import com.dabby.tax.enums.RetCode;
+import com.dabby.tax.util.CommonTool;
 import lombok.Getter;
 import lombok.Setter;
 

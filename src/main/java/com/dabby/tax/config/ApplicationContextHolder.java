@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice.config;
+package com.dabby.tax.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;

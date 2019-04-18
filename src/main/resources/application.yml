@@ -3,3 +3,7 @@ spring:
     active: dev
   application:
     name: billservice
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.dabby.tax.db.entity

@@ -1,6 +1,6 @@
-package com.dabby.tax.billservice.exception;
+package com.dabby.tax.exception;
 
-import com.dabby.tax.billservice.enums.RetCode;
+import com.dabby.tax.enums.RetCode;
 import lombok.Getter;
 import lombok.Setter;
 

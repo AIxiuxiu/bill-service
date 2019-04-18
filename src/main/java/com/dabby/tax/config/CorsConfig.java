@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice.config;
+package com.dabby.tax.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

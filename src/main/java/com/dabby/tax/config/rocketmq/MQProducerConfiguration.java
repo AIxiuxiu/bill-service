@@ -1,6 +1,6 @@
-package com.dabby.tax.billservice.config.rocketmq;
-import com.dabby.tax.billservice.enums.RetCode;
-import com.dabby.tax.billservice.exception.RocketMQException;
+package com.dabby.tax.config.rocketmq;
+import com.dabby.tax.enums.RetCode;
+import com.dabby.tax.exception.RocketMQException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;

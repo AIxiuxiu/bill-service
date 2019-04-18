@@ -1,11 +1,11 @@
-package com.dabby.tax.billservice.config.core;
+package com.dabby.tax.config.core;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
-import com.dabby.tax.billservice.enums.RetCode;
-import com.dabby.tax.billservice.exception.GlobalException;
-import com.dabby.tax.billservice.repojo.RespInfo;
-import com.dabby.tax.billservice.util.CommonTool;
+import com.dabby.tax.enums.RetCode;
+import com.dabby.tax.exception.GlobalException;
+import com.dabby.tax.repojo.RespInfo;
+import com.dabby.tax.util.CommonTool;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindException;

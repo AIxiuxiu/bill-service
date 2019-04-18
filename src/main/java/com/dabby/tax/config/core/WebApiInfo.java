@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice.config.core;
+package com.dabby.tax.config.core;
 //import brave.Tracer;
 import lombok.Data;
 

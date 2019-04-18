@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice.util;
+package com.dabby.tax.util;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,9 +16,13 @@ public class CommonTool {
             99999999, 999999999, Integer.MAX_VALUE };
 
     public static int sizeOfInt(int x) {
-        for (int i = 0;; i++)
-            if (x <= sizeTable[i])
+        for (int i = 0;; i++){
+            if (x <= sizeTable[i]){
                 return i + 1;
+            }
+
+        }
+
     }
     /**
      * 将文件转为byte[]

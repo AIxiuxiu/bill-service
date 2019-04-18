@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice.config.core;
+package com.dabby.tax.config.core;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class WebApiAspectConfig {
-    @Pointcut("execution(public * com.dabby.tax.billservice.BillServiceApplication.*(..))")
+    @Pointcut("execution(public * com.dabby.tax.BillServiceApplication.*(..))")
     public void webLog(){}
 
     @Before("webLog()")

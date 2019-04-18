@@ -1,6 +1,6 @@
-package com.dabby.tax.billservice;
+package com.dabby.tax;
 
-import com.dabby.tax.billservice.utilservice.redisservcie.RedisService;
+import com.dabby.tax.utilservice.redisservcie.RedisService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

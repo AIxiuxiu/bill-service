@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice.utilservice.redisservcie;
+package com.dabby.tax.utilservice.redisservcie;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.*;

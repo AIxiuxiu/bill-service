@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice.enums;
+package com.dabby.tax.enums;
 
 import lombok.Getter;
 import lombok.Setter;

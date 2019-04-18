@@ -1,4 +1,4 @@
-package com.dabby.tax.billservice;
+package com.dabby.tax;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
